@@ -19,9 +19,6 @@ def generate_random_integer(min_value, max_value):
 def generate_random_operator():
     """
     Selects a random mathematical operator from the list ['+', '-', '*'].
- 
-
-    
     Returns:
     - str: A randomly selected operator.
  
