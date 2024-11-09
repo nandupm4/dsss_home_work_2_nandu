@@ -3,15 +3,6 @@ import random
 def generate_random_integer(min_value, max_value):
     """
     Generates a random integer between the given minimum and maximum values.
- 
-    
-    Args:
-    - min_value (int): The lower bound of the random number range.
-    - max_value (int): The upper bound of the random number range.
-    
-    Returns:
-    - int: A random integer between min_value and max_value.
- 
     """
     return random.randint(min_value, max_value)
 
@@ -19,9 +10,6 @@ def generate_random_integer(min_value, max_value):
 def generate_random_operator():
     """
     Selects a random mathematical operator from the list ['+', '-', '*'].
-    Returns:
-    - str: A randomly selected operator.
- 
     """
     return random.choice(['+', '-', '*'])
 
@@ -29,17 +17,6 @@ def generate_random_operator():
 def generate_problem(n1, n2, operator):
     """
     Generates a math problem and computes the answer based on the operator.
- 
-
-    
-    Args:
-    - n1 (int): The first number in the math problem.
-    - n2 (int): The second number in the math problem.
-    - operator (str): The mathematical operator ('+', '-', '*').
-    
-    Returns:
-    - tuple: A tuple containing the string representation of the problem and the correct answer.
- 
     """
     problem = f"{n1} {operator} {n2}"
     
@@ -57,7 +34,6 @@ def generate_problem(n1, n2, operator):
 def math_quiz():
     """
     Main function that runs the math quiz game, presenting problems to the user.
-    
     In this game, the user will solve simple math problems and receive feedback on their answers.
     """
     score = 0  # Keep track of the player's score
